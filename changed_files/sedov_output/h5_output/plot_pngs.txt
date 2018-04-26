@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# compr, rk, fv4
+../plot.py -o standard.png sed_0259.h5
+#../plotcompact.py -o standard2.png sed_0463.h5
+../plot.py -o rk.png sed_rk_0509.h5
+#../plotcompact.py -o rk2.png sed_rk_0916.h5 density
+../plot.py -o fourth.png sed_fv_0707.h5
+#../plotcompact.py -o fourth2.png sed_fv_1292.h5 density
+
+

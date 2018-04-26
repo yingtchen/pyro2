@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# sedov standard, rk, fourth order
+./pyro.py compressible sedov inputs.sedov io.basename=sed_
+./pyro.py compressible_rk sedov inputs.sedov io.basename=sed_rt_
+./pyro.py compressible_fv4 sedov inputs.sedov io.basename=sed_fv_
+

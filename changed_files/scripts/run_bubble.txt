@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# bubble standard, rk, fourth order
+./pyro.py compressible bubble inputs.bubble io.basename=bubble_ vis.dovis=0
+./pyro.py compressible_rk bubble inputs.bubble io.basename=bubble_rk_ vis.dovis=0
+./pyro.py compressible_fv4 bubble inputs.bubble io.basename=bubble_fv_ vis.dovis=0
+

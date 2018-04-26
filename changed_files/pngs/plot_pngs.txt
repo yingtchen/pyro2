@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+# sedov
+../plot.py -o sedov.png sed_0259.h5
+../plot.py -o sedov_rk.png sed_rk_0509.h5
+../plot.py -o sedov_fv4.png sed_fv_0707.h5
+
+# bubble
+../plot.py -o bubble.png bubble_0325.h5
+../plot.py -o bubble_rk.png bubble_rk_0610.h5
+../plot.py -o bubble_fv4.png bubble_fv_0615.h5
+
+# quad
+../plot.py -o quad.png quad_0606.h5
+../plot.py -o quad_rk.png quad_rk_1184.h5
+../plot.py -o quad_fv4.png quad_fv_1186.h5
+
+# rayleigh taylor
+../plot.py -o rt.png rt_0945.h5
+../plot.py -o rt_rk.png rt_rk_1835.h5
+../plot.py -o rt_fv4.png rt_fv_1859.h5

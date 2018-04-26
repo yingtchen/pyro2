@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# compressible n=128
+../plotcompact.py -o c_v0.png kh_c128_v0_0749.h5 density -m 1 -M 2
+../plotcompact.py -o c_v1.png kh_c128_v1_0908.h5 density -m 1 -M 2
+../plotcompact.py -o c_v3.png kh_c128_v3_1488.h5 density -m 1 -M 2
+../plotcompact.py -o c_v10.png kh_c128_v10_3480.h5 density -m 1 -M 2
+
+# rk nowb n=128
+../plotcompact.py -o rk_v0.png kh_rknowb128_v0_1346.h5 density -m 1 -M 2
+../plotcompact.py -o rk_v1.png kh_rknowb128_v1_1626.h5 density -m 1 -M 2
+../plotcompact.py -o rk_v3.png kh_rknowb128_v3_2190.h5 density -m 1 -M 2
+../plotcompact.py -o rk_v10.png kh_rknowb128_v10_4171.h5 density -m 1 -M 2
+
+# fv4 n=128
+../plotcompact.py -o fv_v0.png kh_fv128_v0_1345.h5 density -m 1 -M 2
+../plotcompact.py -o fv_v1.png kh_fv128_v1_1628.h5 density -m 1 -M 2
+../plotcompact.py -o fv_v3.png kh_fv128_v3_2196.h5 density -m 1 -M 2
+../plotcompact.py -o fv_v10.png kh_fv128_v10_4185.h5 density -m 1 -M 2
+
+# compressible n=64
+#../plotcompact.py -o c64_v0.png kh_c64_v0_0377.h5 density
+#../plotcompact.py -o c64_v1.png kh_c64_v1_0452.h5 density
+#../plotcompact.py -o c64_v3.png kh_c64_v3_0741.h5 density
+#../plotcompact.py -o c64_v10.png kh_c64_v10_1734.h5 density
+
+# rk nowb n=64
+#../plotcompact.py -o rknowb64_v0.png kh_rknowb64_v0_0675.h5 density
+#../plotcompact.py -o rknowb64_v1.png kh_rknowb64_v1_0812.h5 density
+#../plotcompact.py -o rknowb64_v3.png kh_rknowb64_v3_1093.h5 density
+#../plotcompact.py -o rknowb64_v10.png kh_rknowb64_v10_2088.h5 density
+
+# rk wb n=64
+#../plotcompact.py -o rkwb64_v0.png kh_rkwb64_v0_0674.h5 density
+#../plotcompact.py -o rkwb64_v1.png kh_rkwb64_v1_0810.h5 density
+#../plotcompact.py -o rkwb64_v3.png kh_rkwb64_v3_1092.h5 density
+#../plotcompact.py -o rkwb64_v10.png kh_rkwb64_v10_2088.h5 density
+# rk wb n=128
+#../plotcompact.py -o rkwb128_v0.png kh_rkwb128_v0_1345.h5 density
+#../plotcompact.py -o rkwb128_v1.png kh_rkwb128_v1_1625.h5 density
+#../plotcompact.py -o rkwb128_v3.png kh_rkwb128_v3_2186.h5 density
+#../plotcompact.py -o rkwb128_v10.png kh_rkwb128_v10_4170.h5 density
+
+# fv4 n=64
+#../plotcompact.py -o fv64_v0.png kh_fv64_v0_0675.h5 density
+#../plotcompact.py -o fv64_v1.png kh_fv64_v1_0815.h5 density
+#../plotcompact.py -o fv64_v3.png kh_fv64_v3_1096.h5 density
+#../plotcompact.py -o fv64_v10.png kh_fv64_v10_2091.h5 density
+
+
